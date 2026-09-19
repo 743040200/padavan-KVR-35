@@ -1,5 +1,5 @@
 
-name: JCG-Q20-buoot
+name: JCG-Q20-uboot
 
 on: 
   workflow_dispatch:
