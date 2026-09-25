@@ -37,7 +37,7 @@ jobs:
         mkdir -p /opt/images/
         
         ##### 修改内存空间和etc空间 固件15M 改为可用17M （32-15=17）
-        sed -i 's/SIZ=0x0B0000/SIZ=0x1100000/g' /opt/rt-n56u/trunk/configs/boards/JDC-1/kernel-3.4.x-5.0.config
+        sed -i 's/SIZ=0x0B0000/SIZ=0x1100000/g' /opt/rt-n56u/trunk/configs/boards/JCG-Q20-uboot/kernel-3.4.x-5.0.config
         sed -i 's/size_etc="6M"/size_etc="17M"/g' /opt/rt-n56u/trunk/user/scripts/dev_init.sh
         sed -i 's/size_tmp="24M"/size_tmp="120M"/g' /opt/rt-n56u/trunk/user/scripts/dev_init.sh
         sed -i 's/mtd_part_size=65536/mtd_part_size=17825792/g' /opt/rt-n56u/trunk/user/scripts/mtd_storage.sh
